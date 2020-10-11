@@ -53,18 +53,17 @@ function displayResults(res){
     console.log(t1);
     title=t1.title;
     console.log(title);
-    author= t1.authors;
+    author= t1.authors || "n/a";
       console.log(author);
      // list.innerHTML+= "AUTHOR:"+ author+"<br />"
-      publisher=t1.publisher;
+      publisher=t1.publisher || "n/a";
       description=t1.description;
      // list.innerHTML+= "PUBLISHER:"  + publisher+"<br />"
       
       book=t1.industryIdentifiers[1];
       //books=t1.industryIdentifiers[2];
       console.log(book);
-      bookIsbn=book.identifier;
-      console.log(bookIsbn);
+      
       item=res.items[0];
       t1= item.volumeInfo;
       bookI=t1.imageLinks;
