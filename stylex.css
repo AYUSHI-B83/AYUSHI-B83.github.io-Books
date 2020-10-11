@@ -1,0 +1,310 @@
+body{
+    background-size: cover;
+    background-position-x: center;
+    background-image: url('imagess.jpg');
+    
+}
+
+
+
+.btn{
+    background-color: brown;
+}
+
+
+
+/*<div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">HOME
+          <span class="caret"></span></button>
+          
+        
+          
+          <ul class="dropdown-menu">
+            <li><a href="#">TOP RATED</a></li>
+            <li><a href="#">BEST-SELLER</a></li>
+            <li><a href="#">LATEST</a></li>
+            <li><a href="#">ABOUT US</a></li>
+          </ul>
+        </div> */
+
+
+        .sidebar {
+          height: 100%;
+          width:0 ;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color:white;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+        
+        .sidebar a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: brown;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidebar a:hover {
+          color: turquoise;
+        }
+        
+        .sidebar .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        
+        .openbtn {
+          font-size: 20px;
+          cursor: pointer;
+          background-color: brown;
+          color: white;
+          padding: 10px 15px;
+          border: white;
+        }
+        
+        .openbtn:hover {
+          background-color: #444;
+        }
+        
+        #main {
+          transition: margin-left .5s;
+          padding: 16px;
+          color: #000;
+        }
+        
+
+       #xd {
+          color:brown;
+          font-size: 16px; /* Increase font-size */
+          width:430px !important;
+          
+          
+          
+        }
+
+      .btn {
+        font-size: 16px; /* Increase font-size */
+          
+          border: 1px solid #ddd; /* Add a grey border */
+          /* Add some space below the input */
+          color: white;
+          
+         
+
+      }
+
+     /* .text{
+        font-size: 50px;
+        font-family: Brush Script MT;
+        position: absolute;
+  top: 70%;
+  left: 25%;
+  background-color: blue;
+      }*/
+
+
+
+      #list{
+        margin-top: 40px;
+        top:30px;
+        visibility:visible;
+        position: absolute;
+        left: 20%;
+        background-color: burlywood;
+        color:brown;
+        padding: 15px 400px 80px 20px;
+        font-size: 25px;
+      
+      }
+     
+
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: "Titillium Web", sans-serif;
+        font-size: 20px;
+        line-height: 1.4;
+        color: #161b1e;
+      }
+      
+      .quote-wrapper {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        margin: 10vh auto 0; /*OPTIONAL MARGIN*/
+      }
+      
+      .text {
+        width: 100%;
+        height: 100%;
+        /*BLUE BG*/
+        background: radial-gradient(
+          ellipse at center,
+          rgb(165,42,42) 0%,
+          rgb(165,42,42)70%,
+  rgba(210, 20, 20, 0) 70.3%
+        );
+        /*RED BG
+        background: radial-gradient(
+          ellipse at center,
+          rgba(210, 20, 20, 1) 0%,
+          rgba(210, 20, 20, 1) 70%,
+          rgba(210, 20, 20, 0) 70.3%
+        );*/
+        position: relative;
+        margin: 0;
+        color: white;
+      }
+      
+      .text p {
+        height: 100%;
+        font-size: 21px;
+        line-height: 1.25;
+        padding: 0;
+        text-align: center;
+        font-style: italic;
+        text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+      }
+      
+      .text::before {
+        content: "";
+        width: 50%;
+        height: 100%;
+        float: left;
+        shape-outside: polygon(
+          0 0,
+          98% 0,
+          50% 6%,
+          23.4% 17.3%,
+          6% 32.6%,
+          0 50%,
+          6% 65.6%,
+          23.4% 82.7%,
+          50% 94%,
+          98% 100%,
+          0 100%
+        );
+        shape-margin: 7%;
+      }
+      
+      .text p::before {
+        content: "";
+        width: 50%;
+        height: 100%;
+        float: right;
+        shape-outside: polygon(
+          2% 0%,
+          100% 0%,
+          100% 100%,
+          2% 100%,
+          50% 94%,
+          76.6% 82.7%,
+          94% 65.6%,
+          100% 50%,
+          94% 32.6%,
+          76.6% 17.3%,
+          50% 6%
+        );
+        shape-margin: 7%;
+      }
+      .quote-wrapper::before {
+        content: "\201C";
+        font-size: 270px;
+        height: 82px;
+        line-height: 0.78;
+        line-height: 1;
+        position: absolute;
+        top: -48px;
+        left: 0;
+        z-index: 1;
+        font-family: sans-serif, serif;
+        color: #ccc;
+        opacity: 0.9;
+      }
+
+      .dropdown-header{
+        font-size: 25px;
+          color: brown;
+          padding: 8px 8px 8px 32px;
+          background-color: turquoise;
+
+      }
+
+
+     /* border: 1px solid #ddd; 
+          margin-bottom: 12px;
+          color: black;
+          
+         
+        height: 30px;
+          width: 10px;
+     
+
+          <div class="book-list">
+    <h2 class="text-text"></h2>
+    
+    <div id="list" class="">Search Results:</div> 
+
+  </div>
+  
+  <div id="btns" onclick="read()" >
+    
+    
+  </div>
+  
+  
+  <div id="viewerCanvas" style="width: 600px; height: 500px"></div>
+
+  <script src="appx.js"charset="utf-8"></script>  
+ */
+ 
+
+/*slider switch css */
+
+.switch {
+  align-self: flex-end;
+  margin: 0.9375rem;
+}
+.inner-switch {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #555;
+  border-radius: 1.25rem;
+  width: 3.125rem;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.1875rem;
+  margin-left: 0.3125rem;
+}
+
+
+.dark,
+.dark * {
+    background-color: #222;
+    color: #e6e6e6;
+    border-color: #e6e6e6;
+}
+
+
+
+.navbar-nav > li{
+  margin-left:30px;
+  margin-right:30px;
+}
+.navbar navbar-inverse{
+  color:brown;
+}
